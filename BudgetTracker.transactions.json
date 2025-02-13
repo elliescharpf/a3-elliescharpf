@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "67ad59fe516c853fa4751f69"
+  },
+  "username": "testuser",
+  "yourname": "testing data",
+  "amount": "20",
+  "category": "Shopping",
+  "date": {
+    "$date": "2025-02-12T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67ad5a0b516c853fa4751f6a"
+  },
+  "username": "testuser",
+  "yourname": "more",
+  "amount": "4",
+  "category": "Transportation",
+  "date": {
+    "$date": "2000-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67ad5a23516c853fa4751f6b"
+  },
+  "username": "testuser2",
+  "yourname": "test2data",
+  "amount": "3",
+  "category": "Food",
+  "date": {
+    "$date": "1970-01-01T00:00:00.000Z"
+  }
+}]
