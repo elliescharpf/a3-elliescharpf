@@ -13,6 +13,7 @@ There are also edit and delete buttons for each transaction where you can edit t
 - Connecting the user data from mongodb compass to its own transaction data.
 - Having the data show up for the specific user without having to click add transaction (I still haven't figured this out yet).
 - I also have error messages in the console about tailwindcss that I have not resolved
+- I also had a hard time formatting the date
 
 ## Authentication
 I chose to use local storage for authentication because it was the easiest and most straight forward. 
