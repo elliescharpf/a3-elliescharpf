@@ -1,8 +1,6 @@
 
 ## Your Web Application Title
-
-https://a3-elliescharpf.vercel.app/
-
+https://a3-elliescharpf.onrender.com 
 ## Goal
 The goal of the application is to login using 1 of the 2 users: username: testuser1, password: 123, or username: testuser2, password: 1234.
 Then you are redirected to the spending tracker where you can add transactions where they will be displayed in the transaction data table. If you were to logout (by going to the login page and clicking log out) and then log back in, your data will still be there (after you click add transaction, the previous data is displayed).
@@ -23,7 +21,7 @@ I used tailwindCSS because this is the framework my group chose for our final pr
 
 ## Technical Achievements
 - **Tech Achievement 1**: I made a clear transaction button which clears the users transactions all at once. 
-- **Tech Achievement 2**: I deployed my site on Vercel instead of Glitch.
+- **Tech Achievement 2**: I deployed my site on Render instead of Glitch.
 
 ## Design/Evaluation Achievements
 - **Design Achievement 1**: I used the tailwindcss framework but I also implemented my own design choices including the gradient background and the edit and delete buttons.
