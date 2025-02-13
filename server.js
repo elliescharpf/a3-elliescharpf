@@ -1,7 +1,7 @@
 const express = require("express"),
     fs = require("fs"),
     mime = require("mime"),
-    { MongoClient, ObjectId } = require("mongodb"),
+    { MongoClient, ObjectId, ServerApiVersion } = require("mongodb"),
     app = express(),
     dir = "public/",
     port = 3000;
@@ -9,14 +9,36 @@ const req = require("express/lib/request");
 const path = require("node:path");
 
 // MongoDB connection URL
-const url = "mongodb://localhost:27017";
+const uri = "mongodb+srv://elscharpf:mongodbatlasspassword@budgettracker.pk47g.mongodb.net/?retryWrites=true&w=majority&appName=BudgetTracker";
 const dbName = "BudgetTracker";
+
+const client = new MongoClient(uri, {
+    serverApi: {
+        version: ServerApiVersion.v1,
+        strict: true,
+        deprecationErrors: true,
+    }
+});
+
+async function run() {
+    try {
+        // Connect the client to the server	(optional starting in v4.7)
+        await client.connect();
+        // Send a ping to confirm a successful connection
+        await client.db("admin").command({ ping: 1 });
+        console.log("Pinged your deployment. You successfully connected to MongoDB!");
+    } finally {
+        // Ensures that the client will close when you finish/error
+        await client.close();
+    }
+}
+run().catch(console.dir);
 
 // MongoDB client instance
 let db, transactionsCollection, usersCollection;
 
 // Connect to MongoDB
-MongoClient.connect(url)
+MongoClient.connect(uri)
     .then(client => {
         console.log("Connected to MongoDB");
         db = client.db(dbName);
@@ -38,7 +60,7 @@ MongoClient.connect(url)
                 if (!user) {
                     usersCollection.insertOne({
                         username: "testuser2",
-                        password: "1234",
+                        password: "123",
                     });
                     console.log("testuser2 added");
                 }
