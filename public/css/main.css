@@ -1,0 +1,138 @@
+@import "@tailwindcss";
+
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #205072, #eef5fa);
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    padding-left: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    color: black;
+    padding-left: 30px;
+}
+
+h3 {
+    font-size: 30px;
+    color: black;
+}
+
+p {
+    color: black;
+    font-size: larger;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #c7deef;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+}
+
+form select,
+form input,
+form button {
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #569dcf;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #3078ac;
+}
+
+.editButton {
+    background-color: #f5b942; /* Yellow-orange */
+    color: black;
+}
+
+.editButton:hover {
+    background-color: #e09e32;
+}
+
+.deleteButton {
+    background-color: #d9534f; /* Red */
+    color: white;
+}
+
+.deleteButton:hover {
+    background-color: #c9302c;
+}
+
+
+table {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    padding-left: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #c7deef ;
+}
+
+tr:nth-child(odd) {
+    background-color: #eef5fa  ;
+}
+
+@media (max-width: 800px) {
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    form {
+        max-width: 45%;
+    }
+
+    table {
+        max-width: 45%;
+    }
+}
