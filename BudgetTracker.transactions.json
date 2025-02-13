@@ -33,4 +33,28 @@
   "date": {
     "$date": "1970-01-01T00:00:00.000Z"
   }
+},
+{
+  "_id": {
+    "$oid": "67ae007eb07c6cb0862e46cc"
+  },
+  "username": "testuser",
+  "yourname": "testing",
+  "amount": "12",
+  "category": "Food",
+  "date": {
+    "$date": "1970-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67ae0095b07c6cb0862e46cd"
+  },
+  "username": "testuser2",
+  "yourname": "testtest",
+  "amount": "124",
+  "category": "Food",
+  "date": {
+    "$date": "1970-01-01T00:00:00.000Z"
+  }
 }]
